@@ -1,38 +1,58 @@
+:root {
+	--bg-color: #F1F1E6;
+	--text-color: #0e4749;
+	--accent-color: #00C599;
+	--title-font: 'Sofia Sans';
+	--text-font: 'Inter';
+}
+
 *{
-	font:status-bar;
-	font-size: 4.5vw;
+	margin: 0;
+	padding: 0;
 }
+
 body{
-	background-image: url("IMG/blue_p6b.gif");
+	background-color: var(--bg-color);
 }
-.P{
-	background-image: url("IMG/P.gif") !important; 
+
+#navbar{
+	width: 90%;
+	height: 3rem;
+	margin-top: 2em;
+	padding: 0 5%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-end;
+	gap: 2rem;
 }
-#Informations{
-	border: 5px solid grey;
-	border-radius: 30px;
-	background: white;
-	width: 50%;
-	padding: 5px;
-	margin: 20px;
+
+.nav_home{
+	margin-right: auto;
+	font-family: var(--title-font);
+	font-size: 2.5rem;
+	text-decoration: none;
+	color: var(--text-color);
+	transition: all 0.3s ease-in-out 0s;
 }
-#Containers{
-	border-radius: 100px;
-	background: white;
-	width: 50%;
-	padding: 5px;
-	margin: 20px;
+
+.nav_social path{
+	fill: var(--text-color);
+	transition: all 0.3s ease-in-out 0s;
 }
-.Papers .Thoughts{
-	padding: 5px;
+
+.nav_social{
+	height: 2rem;
+	width: 2rem;
 }
-.Papers:hover{
-	background-color: lightblue;
-	border-radius: 50px;
-	transition: 1s all ;  
+
+.nav_home:hover{
+	color: var(--accent-color);
 }
-.Thoughts:hover{
-	background-color: lightblue;
-	border-radius: 50px;
-	transition: 1s all ;   
+
+.nav_social path:hover{
+	fill: var(--accent-color);
 }
+
+/* TODO Fix SVG hover problem*/
+/* TODO Organize the files */
