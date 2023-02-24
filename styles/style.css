@@ -1,10 +1,17 @@
 :root {
-	--bg-color: #F1F1E6;
-	--text-color: #0e4749;
-	--accent-color: #00C599;
+	--bg-color: #E9E8E8;
+	--text-color: #20262E;
+	--light-accent-color: #CD5888;
+	--dark-accent-color: #913175;
 	--title-font: 'Sofia Sans';
 	--text-font: 'Inter';
 }
+
+/* :root {
+	--bg-color: #E9E8E8;
+	--text-color: #20262E;
+	--accent-color: #CD5888;
+} */
 
 *{
 	margin: 0;
@@ -19,7 +26,7 @@ body{
 	width: 90%;
 	height: 3vh;
 	margin-top: 5vh;
-	margin-bottom: 10vh;
+	margin-bottom: 14vh;
 	padding: 0 5%;
 	display: flex;
 	flex-direction: row;
@@ -48,34 +55,37 @@ body{
 }
 
 .nav-home:hover{
-	color: var(--accent-color);
+	color: var(--dark-accent-color);
 }
 
 .nav-social path:hover{
-	fill: var(--accent-color);
+	fill: var(--dark-accent-color);
 }
 
 #about-us {
-	width: 90%;
+	width: 85%;
 	margin: auto;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
 	gap: 10%;
+	margin-bottom: 10vh;
 }
 
 #about-us-title {
 	font-family: var(--title-font);
-	color: #0e4749;
+	color: var(--text-color);
 	font-size: 3em;
 	font-weight: lighter;
-	margin-bottom: 1rem;
+	margin-bottom: 1vh;
 }
 
 #about-us-body {
 	font-family: var(--text-font);
 	color: var(--text-color);
 	font-size: 1.5rem;
+	font-weight: 400;
+	line-height: 1.45;
 }
 
 #about-us-img {
@@ -84,10 +94,30 @@ body{
 }
 
 #about-us-svg {
-	width: 27.5rem;
-	height: 27.5rem;
+	width: 18.75em;
+	height: 18.75rem;
+}
+
+#button-section {
+	display: flex;
+	justify-content: center;
+}
+
+#papers-button {
+	text-decoration: none;
+	font-family: var(--title-font);
+	color: var(--text-color);
+	font-size: 1.5rem;
+	padding: 0.75rem;
+	border: 4px solid var(--text-color);
+	border-radius: 3%;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+#papers-button:hover {
+	background-color: var(--text-color);
+	color: var(--bg-color);
+	border-color: var(--light-accent-color);
 }
 
 /* TODO Fix SVG hover problem*/
-/* TODO Crop the svg */
-/* TODO Add Go to pages button */
