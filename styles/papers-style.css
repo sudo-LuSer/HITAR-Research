@@ -1,8 +1,7 @@
 :root {
-	--bg-color: #E9E8E8;
-	--text-color: #20262E;
-	--light-accent-color: #CD5888;
-	--dark-accent-color: #913175;
+	--bg-color: #184954;
+	--text-color: #efe2cd;
+	--accent-color: #fbc877;
 	--title-font: 'Sofia Sans';
 	--text-font: 'Inter';
 }
@@ -49,11 +48,11 @@ body{
 }
 
 .nav-home:hover{
-	color: var(--dark-accent-color);
+	color: var(--accent-color);
 }
 
 .nav-social:hover path{
-	fill: var(--dark-accent-color);
+	fill: var(--accent-color);
 }
 
 section{
@@ -88,7 +87,7 @@ li{
 
 .paper-link:hover {
     background-color: var(--text-color);
-    color: var(--light-accent-color);
+    color: var(---accent-color);
 }
 
 .paper-link:active{
