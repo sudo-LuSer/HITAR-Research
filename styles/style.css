@@ -58,7 +58,7 @@ body{
 	color: var(--dark-accent-color);
 }
 
-.nav-social path:hover{
+.nav-social:hover path{
 	fill: var(--dark-accent-color);
 }
 
